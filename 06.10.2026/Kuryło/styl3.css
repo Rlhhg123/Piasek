@@ -1,0 +1,49 @@
+header{
+    background-color: #C75B39;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#container{
+    display: flex;
+    justify-content: auto;
+    margin-up: 0px;
+    margin-bottom: 0px;
+}
+
+#menu{
+    background-color: #FF8A65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+
+#main{
+    background-color: snow;
+    width: 75%;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+
+    img{
+        width: 25%;
+        box-shadow: 15px 15px 10px DimGray;
+    }
+
+}
+
+
+#stopka{
+    background-color: #C75B39;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

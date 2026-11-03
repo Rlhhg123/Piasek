@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #111;
+}
+
+.strona {
+    width: 80%;
+    height: 100vh;
+    min-height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    border: 1px solid #111;
+    background: #d6d6d6;
+}
+
+.naglowek {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-bottom: 1px solid #111;
+}
+
+.naglowek h1 {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    color: #ff0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    border-left: 1px solid #111;
+}
+
+.logo img {
+    display: block;
+    width: min(80%, 120px);
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.zawartosc {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 0;
+}
+
+.kolumna-formularza {
+    padding: 16px;
+    border-right: 1px solid #111;
+}
+
+#formularz {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding: 8px;
+    border: 2px dashed #f00;
+    background: #ff0;
+}
+
+.komunikaty-bledu {
+    color: #c00;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.komunikaty-bledu:empty {
+    display: none;
+}
+
+.komunikaty-bledu ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.pole input[aria-invalid="true"] {
+    border: 2px solid #c00;
+}
+
+legend {
+    margin: 0 auto;
+    padding: 0 4px;
+}
+
+.pole {
+    display: grid;
+    grid-template-columns: minmax(74px, 1fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.pole:last-child {
+    margin-bottom: 0;
+}
+
+.pole input {
+    width: 100%;
+    min-width: 0;
+}
+
+button {
+    align-self: center;
+    margin-top: auto;
+}
+
+.panel-klienta {
+    padding: 16px;
+    text-align: center;
+}
+
+.panel-klienta h2 {
+    margin: 4px 0 16px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#wynik {
+    overflow-wrap: anywhere;
+}
+
+.stopka {
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-top: 1px solid #111;
+    color: #f00;
+}
+
+@media (max-width: 600px) {
+    .strona {
+        width: 94%;
+    }
+
+    .naglowek {
+        grid-template-columns: 70% 30%;
+    }
+
+    .naglowek h1 {
+        font-size: 1.1rem;
+    }
+
+    .zawartosc {
+        grid-template-columns: 45% 55%;
+    }
+
+    .kolumna-formularza,
+    .panel-klienta {
+        padding: 10px 6px;
+    }
+
+    .pole {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+}

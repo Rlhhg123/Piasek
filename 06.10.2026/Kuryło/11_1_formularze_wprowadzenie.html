@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Obiektowy model dokumentu</title>
+<script type="text/javascript" src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="blad" id="blad"></div>
+<div class="content">
+<h3>Formularz zamówienia</h3>
+<form action="zamowienie.html" method="get" name="zamówienie" id="zamowienie">
+    <ul>
+    	<li>
+        <label>Nazwa produktu :</label>
+        <div><input name="produkt" type="text" id="produkt"/></div>
+        </li>
+        <li>
+        <label>Ilość :</label>
+        <div><input name="" type="text" id="ilosc"/></div>
+        </li>
+        <li>
+        <label>Imię :</label>
+        <div><input name="imie" type="text" id="imie"/></div>
+        </li>
+        <li>
+        <label>Nazwisko :</label>
+        <div><input name="nazwisko" type="text" id="nazwisko"/></div>
+        </li>
+        <li>
+        <label>Email :</label>
+        <div><input name="email" type="text" id="email"/></div>
+        </li>
+        <li>
+        <label>Adres :</label>
+        <div><textarea name="adres" cols="12" rows="4" id="adres"></textarea></div>
+        </li>
+        <li>
+        <label>Akceptuję regulamin :</label>
+        <div><input name="regulamin" type="checkbox" id="regulamin"/></div>
+        </li>
+    </ul>
+    <div class="wyslij"><input name="wyslij" type="submit" value="Wyślij" id="wyslij"/></div>
+</form>
+</div>
+</body>
+</html>

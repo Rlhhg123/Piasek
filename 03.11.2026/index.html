@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dane osobowe</title>
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="java.js" defer></script>
+    </head>
+    <body>
+        <main class="strona">
+            <header class="naglowek">
+                <h1>Paweł Kuryło</h1>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo szkoły">
+                </div>
+            </header>
+
+            <div class="zawartosc">
+                <section class="kolumna-formularza" aria-labelledby="tytul-formularza">
+                    <form id="formularz" novalidate>
+                        <fieldset>
+                            <legend id="tytul-formularza">Dane osobowe</legend>
+                            <div class="pole">
+                                <label for="imie">Imię</label>
+                                <input id="imie" name="imie" type="text" autocomplete="given-name" required>
+                            </div>
+                            <div class="pole">
+                                <label for="nazwisko">Nazwisko</label>
+                                <input id="nazwisko" name="nazwisko" type="text" autocomplete="family-name" required>
+                            </div>
+                            <div class="pole">
+                                <label for="wiek">Wiek</label>
+                                <input id="wiek" name="wiek" type="number" min="0" max="140" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit">Wyślij</button>
+                    </form>
+                </section>
+
+                <section class="panel-klienta" aria-labelledby="tytul-klienta">
+                    <h2 id="tytul-klienta">Dane klienta</h2>
+                    <p id="wynik" aria-live="polite"></p>
+                </section>
+            </div>
+
+            <footer class="stopka">Stopka</footer>
+        </main>
+    </body>
+</html>

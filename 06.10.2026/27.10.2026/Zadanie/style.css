@@ -1,0 +1,54 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ececec;
+	color: #05264e;
+}
+	
+h1, h2, h3, h4, h5, h6, p {
+	margin: 10px 0px 0px 10px;
+}
+
+li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
+label {
+	font-size: 20px;
+	width: 200px;
+	float:left;
+background-color: #eeeeee;
+}
+
+input, textarea {
+	width: 200px;
+	font-size: 18px;
+	background-color: #fffedd;
+}
+
+.wyslij input {
+	background-color: #eeeeee;
+}
+
+.wyslij {
+	padding: 10px 0px;
+	text-align: center;
+	
+}
+
+.content {
+	width: 500px;
+	background: #ffffff;
+	border-color: #05264e;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+.blad {
+	width: 484px;
+	font-size: 14px;
+	padding: 10px;
+	color: #c60f0f;
+}
+
+
