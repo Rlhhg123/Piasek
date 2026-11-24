@@ -1,0 +1,71 @@
+body {
+    font-family: Georgia;
+    margin: 0;
+}
+
+#baner,
+#stopka {
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#gorne {
+    display: flex;
+}
+
+#panelLewy,
+#panelSrodkowy {
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+
+#panelPrawy {
+    background-color: #A26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+
+#panelPrawy img {
+    height: 300px;
+}
+
+#panelGlowny {
+    background-color: #F0EAE2;
+    padding: 50px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #69293A;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#czerwony {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+#zielony {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+#niebieski {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
